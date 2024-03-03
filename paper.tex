@@ -2,8 +2,9 @@
 \usepackage{times}
 \usepackage{blindtext}
 \usepackage{url}
+\usepackage{float}
 
-\title{Mathematical Observation on the Homelessness Crisis through Mathematical Methods}
+\title{Observing the United States' Homelessness Crisis through Mathematical Methods}
 \author{Mufaro Machaya, Nam Le, Ben Stillwell \\ Cy-Fair Senior High School \\ Cypress, Texas}
 \date{March 3, 2024}
 
@@ -23,7 +24,7 @@
 
 \section{Introduction}
 Understanding the housing shortage has become more important than ever, as rates of homelessness have reached
-unprecedented and potentially dire level\cite{Census2010ACSDP1Y2010.DP04}. Moving into the future, it is
+unprecedented and potentially dire level\cite{NPR-ABGC-2022}. Moving into the future, it is
 undeniably critical for promoting the general welfare of United States populations to best understand housing for
 influencing public policy across major cities in the United States. Thus, we have prepared the following mathematical
 models to best understand such a trend.
@@ -37,8 +38,142 @@ The first problem asks us to develop a mathematical model to predict changes to 
 years in two cities of our choosing: Seattle, Washington; and Albequerque, New Mexico.
 
 \subsection{Assumptions and Justifications}
+
+\textit{There will be no immense, drastic, and long-term permanent changes to housing production possibility
+within the next fifty years.} \\
+
+\noindent
+Justification: Events that will drastically change the ability to produce housing, such as immense wars or widespread
+natural disasters, are neigh-impossible to detect accurately with a simple mathematical model. The only events that can
+be accurately tracked through mathematical means over short periods of time are cyclical events, like economic
+recessions or inflation. \\
+
+\noindent
+\textit{Occupied housing will not be considered part of the available total housing supply.} \\
+
+\noindent
+Justification: In regards to fixing the homelessness crisis, housing that can be considered available for allocation to
+unhoused people inherently must be unoccupied by others. \\
+
+\noindent
+\textit{Differences in median housing costs and median income per capita across regions in both Albequerque and Seattle
+will not be considered in determining housing availability.} \\
+
+\noindent
+Justification: These factors hold a strong correlation with housing unavailability, yet we assume them to have no
+causal relationship. \\
+
+\noindent
+\textit{The National GDP will have a strong-enough correlation with housing availability to aid in accurately
+accounting for cyclical economic trends.} \\
+
+\noindent
+Justification: We fully recognize that national economic health will not be inherently causal with housing availability
+in select cities, but on a macroeconomic scale, the strength of the economy will be reasonably provide a benchmark for
+predicting the economic decisions of housing construction companies and consumers.
+This relies on the assumption that in times of economic prosperity,
+
 \subsection{Model Development}
+For our housing availability model, we choose to use a simple vector machine that regresses historical housing availiability
+data for both Albequerque and Seattle, and from there, we cross-reference this data with historical economic trends
+across the United States to best model housing availability over time given cyclical economic trends.
+
+\noindent
+To begin, we trained the model on the following datasets for housing availability in Albequerque and Seattle and the
+national GDP of the United States.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c c c c|} 
+    \hline 
+    Year & Total housing units & Occupied units & Vacant units \\ [0.5ex]
+    \hline
+    2010  &  234,891 & 217,256 & 17,635 \\
+    2011  &  237,735 & 220,060 & 17,675 \\
+    2012  &  239,718 & 222,584 & 17,134 \\
+    2013  &  240,277 & 222,491 & 17,786 \\
+    2014  &  240,961 & 222,868 & 18,093 \\
+    2015  &  241,326 & 222,098 & 19,228 \\
+    2016  &  242,070 & 221,320 & 20,750 \\
+    2017  &  243,402 & 221,119 & 22,283 \\
+    2018  &  244,382 & 222,748 & 21,634 \\
+    2019  &  245,476 & 224,166 & 21,310 \\
+    2020  &  247,926 & 229,701 & 18,225 \\
+    2021  &  252,924 & 236,191 & 16,733 \\
+    2022  &  255,178 & 239,800 & 15,378 \\ [1ex] 
+    \hline
+  \end{tabular}
+  \caption{Housing Statistics in Albequerque, New Mexico \cite{Census2010ACSDP1Y2010.DP04}}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c c c c|}
+    \hline
+    Year & Total housing units & Occupied units & Vacant units \\ [0.5ex]
+    \hline
+    2010 & 302,465 & 280,453 & 22,012 \\
+    2011 & 304,164 & 282,480 & 21,684 \\
+    2012 & 306,694 & 285,476 & 21,218 \\
+    2013 & 309,205 & 288,439 & 20,766 \\
+    2014 & 311,286 & 290,822 & 20,464 \\
+    2015 & 315,950 & 296,633 & 19,317 \\
+    2016 & 322,795 & 304,157 & 18,638 \\
+    2017 & 334,739 & 314,850 & 19,889 \\
+    2018 & 344,503 & 323,446 & 21,057 \\
+    2019 & 354,475 & 331,836 & 22,639 \\
+    2020 & 367,337 & 344,629 & 22,708 \\
+    2021 & 362,809 & 337,361 & 25,448 \\
+    2022 & 372,436 & 345,246 & 27,190 \\ [1ex]
+    \hline
+  \end{tabular}
+  \caption{Housing Statistics in Seattle, Washington \cite{Census2010ACSDP5Y2010.DP04}}
+\end{table}
+
+\iffalse
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|l|c|l|}
+    \hline
+    Year & GDP & Year & GDP \\ [0.5ex]
+    \hline
+    1980 & 2857.3085 & 2005 & 13039.197 \\
+    1981 & 3207.04125 & 2006 & 13815.583 \\
+    1982 & 3343.78925 & 2007 & 14474.227 \\
+    1983 & 3634.0365 &  2008 & 14769.86175 \\
+    1984 & 4037.614 & 2009 & 14478.06725 \\
+    1985 & 4338.9805 & 2010 & 15048.971 \\
+    1986 & 4579.6325 & 2011 & 15599.7315 \\
+    1987 & 4855.21625 & 2012 & 16253.97 \\
+    1988 & 5236.438 & 2013 & 16880.68325 \\
+    1989 & 5641.5795 & 2014 & 17608.13825 \\
+    1990 & 5963.1445 & 2015 & 18295.019 \\
+    1991 & 6158.12925 & 2016 & 18804.91325 \\
+    1992 & 6520.32725 & 2017 & 19612.1025 \\
+    1993 & 6858.5585 & 2018 & 20656.5155 \\
+    1994 & 7287.2365 & 2019 & 21521.395 \\
+    1995 & 7639.74925 & 2020 & 21322.9495 \\
+    1996 & 8073.12175 & 2021 & 23594.03075 \\
+    1997 & 8577.5525 & 2022 & 25744.10825 \\
+    1998 & 9062.81675 & 2023 & 27357.842 \\
+    1999 & 9631.17175 & \\ 
+    2000 & 10250.952 & \\
+    2001 & 10581.929 & \\
+    2002 & 10929.10825 & \\
+    2003 & 11456.4495 & \\
+    2004 & 12217.19575 & \\ [1ex]
+    \hline
+  \end{tabular}
+  \caption{Gross Domestic Product of the United States in Billions of Dollars, Adjusted for Inflation \cite{FREDGDP}}
+\end{table}
+\fi
+
+\noindent
+Due to the limited size of the dataset, we chose to use a $C$ value for our SVM closer to 1.0 to prevent overfitting or
+underfitting of the data. 
+
 \subsection{Results}
+
 \subsection{Reflecting on the Model}
 
 \newpage
@@ -63,6 +198,7 @@ years in two cities of our choosing: Seattle, Washington; and Albequerque, New M
 
 \newpage
 
+\Urlmuskip=0mu plus 1mu\relax
 \bibliographystyle{plain}
 \bibliography{sources}
 

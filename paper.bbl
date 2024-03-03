@@ -1,10 +1,25 @@
 \begin{thebibliography}{1}
 
+\bibitem{NPR-ABGC-2022}
+Chris Arnold, Robert Benincasa, Jacqueline GaNun, and Haidee Chu.
+\newblock There's a massive housing shortage across the u.s. here's how bad it
+  is where you live.
+\newblock {\em NPR Economy}, 14 July 2022.
+\newblock Accessed on 3 March 2024
+  \url{https://www.npr.org/2022/07/14/1109345201/theres-a-massive-housing-shortage-across-the-u-s-heres-how-bad-it-is-where-you-l}.
+
 \bibitem{Census2010ACSDP1Y2010.DP04}
 U.S.~Census Bureau.
 \newblock Selected housing characteristics.
 \newblock U.S. Census Bureau.
 \newblock Accessed on 3 March 2024.
   \url{https://data.census.gov/table/ACSDP1Y2010.DP04?q=albquerque%20city%20DP04&g=160XX00US5363000}.
+
+\bibitem{Census2010ACSDP5Y2010.DP04}
+U.S.~Census Bureau.
+\newblock Selected housing characteristics.
+\newblock U.S. Census Bureau.
+\newblock Accessed on 3 March 2024.
+  \url{https://data.census.gov/table/ACSDP5Y2010.DP04?q=seattle%20city%20DP04&g=160XX00US5363000&hidePreview=false&vintage=2018&layer=VT_2018_160_00_PY_D1&cid=DP04_0001E&tid=ACSDP5Y2018.DP04}.
 
 \end{thebibliography}
