@@ -4,6 +4,9 @@
 \usepackage{url}
 \usepackage{float}
 
+\usepackage{graphicx}
+\graphicspath{{./figures/}}
+
 \title{Observing the United States' Homelessness Crisis through Mathematical Methods}
 \author{Mufaro Machaya, Nam Le, Ben Stillwell \\ Cy-Fair Senior High School \\ Cypress, Texas}
 \date{March 3, 2024}
@@ -63,16 +66,6 @@ will not be considered in determining housing availability.} \\
 Justification: These factors hold a strong correlation with housing unavailability, yet we assume them to have no
 causal relationship. \\
 
-\noindent
-\textit{The National GDP will have a strong-enough correlation with housing availability to aid in accurately
-accounting for cyclical economic trends.} \\
-
-\noindent
-Justification: We fully recognize that national economic health will not be inherently causal with housing availability
-in select cities, but on a macroeconomic scale, the strength of the economy will be reasonably provide a benchmark for
-predicting the economic decisions of housing construction companies and consumers.
-This relies on the assumption that in times of economic prosperity,
-
 \subsection{Model Development}
 For our housing availability model, we choose to use a simple vector machine that regresses historical housing availiability
 data for both Albequerque and Seattle, and from there, we cross-reference this data with historical economic trends
@@ -103,7 +96,7 @@ national GDP of the United States.
     2022  &  255,178 & 239,800 & 15,378 \\ [1ex] 
     \hline
   \end{tabular}
-  \caption{Housing Statistics in Albequerque, New Mexico \cite{Census2010ACSDP1Y2010.DP04}}
+  \caption{Housing Statistics in Albequerque, New Mexico \cite{Census2010ACSDP1Y2010.DP04}.}
 \end{table}
 
 \begin{table}[H]
@@ -127,54 +120,58 @@ national GDP of the United States.
     2022 & 372,436 & 345,246 & 27,190 \\ [1ex]
     \hline
   \end{tabular}
-  \caption{Housing Statistics in Seattle, Washington \cite{Census2010ACSDP5Y2010.DP04}}
+  \caption{Housing Statistics in Seattle, Washington \cite{Census2010ACSDP5Y2010.DP04}.}
 \end{table}
-
-\iffalse
-\begin{table}[H]
-  \centering
-  \begin{tabular}{|c|l|c|l|}
-    \hline
-    Year & GDP & Year & GDP \\ [0.5ex]
-    \hline
-    1980 & 2857.3085 & 2005 & 13039.197 \\
-    1981 & 3207.04125 & 2006 & 13815.583 \\
-    1982 & 3343.78925 & 2007 & 14474.227 \\
-    1983 & 3634.0365 &  2008 & 14769.86175 \\
-    1984 & 4037.614 & 2009 & 14478.06725 \\
-    1985 & 4338.9805 & 2010 & 15048.971 \\
-    1986 & 4579.6325 & 2011 & 15599.7315 \\
-    1987 & 4855.21625 & 2012 & 16253.97 \\
-    1988 & 5236.438 & 2013 & 16880.68325 \\
-    1989 & 5641.5795 & 2014 & 17608.13825 \\
-    1990 & 5963.1445 & 2015 & 18295.019 \\
-    1991 & 6158.12925 & 2016 & 18804.91325 \\
-    1992 & 6520.32725 & 2017 & 19612.1025 \\
-    1993 & 6858.5585 & 2018 & 20656.5155 \\
-    1994 & 7287.2365 & 2019 & 21521.395 \\
-    1995 & 7639.74925 & 2020 & 21322.9495 \\
-    1996 & 8073.12175 & 2021 & 23594.03075 \\
-    1997 & 8577.5525 & 2022 & 25744.10825 \\
-    1998 & 9062.81675 & 2023 & 27357.842 \\
-    1999 & 9631.17175 & \\ 
-    2000 & 10250.952 & \\
-    2001 & 10581.929 & \\
-    2002 & 10929.10825 & \\
-    2003 & 11456.4495 & \\
-    2004 & 12217.19575 & \\ [1ex]
-    \hline
-  \end{tabular}
-  \caption{Gross Domestic Product of the United States in Billions of Dollars, Adjusted for Inflation \cite{FREDGDP}}
-\end{table}
-\fi
 
 \noindent
 Due to the limited size of the dataset, we chose to use a $C$ value for our SVM closer to 1.0 to prevent overfitting or
 underfitting of the data. 
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{chart1}
+  \caption{The number of vacancies in Albequerque and Seattle from 2010 to 2022 \cite{Census2010ACSDP1Y2010.DP04,Census2010ACSDP5Y2010.DP04}.}
+\end{figure}
+
+\noindent
+Let $H(x)$ equal the number of available houses for a given year, where $x$ is the current year (absolute from year 0, such as 2024). Simple regression on this dataset results in a total trendline of
+
+$$H_{\textrm{\small TOTAL}}(x) = 385x - 735,364$$
+
+\noindent
+where $R^{2}_{\textrm{\small TOTAL}} = 0.586$, and an average trendline of
+
+$$H_{\textrm{\small AVG}}(x) = 192x - 367,682$$
+
+\noindent
+where $R^{2}_{\textrm{\small AVG}} = 0.586$. \\
+
+\noindent
+A coefficient of determination of $0.586$ is undeniably subpar due to the immense indifficulty in representing vast differences across the trends with linear functions.
+
 \subsection{Results}
 
+With this model, we can predict the following housing statistics for 2034 (10 years in the future), 2044 (20 years in the future), and 2074 (50 years in the future):
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c c|c c|}
+    \hline
+    Year & Years from 2024 & Total Available Homes & Average Available Homes in Each City \\
+    \hline
+    2034 & 10 & 47,726 & 22,846 \\
+    2044 & 20 & 51,576 & 24,766 \\
+    2074 & 50 & 63,126 & 30,526 \\
+    \hline
+  \end{tabular}
+\end{table}
+
 \subsection{Reflecting on the Model}
+
+Overall, our model proves generally weak at predicting immense, unforseen changes to the economic situation of both cities such as the advent of war, the outbreak of a major epidemic/pandemic, or a large-scale natural disaster. This model is best for serving as a general, aggregate predictor of housing availability based on cyclical economic trends. Our coefficient of determination $R^{2}$ is certainly low, indicating a lack of accuracy, but this is certainly due to the difficulty of modeling previously-mentioned large-scale events with a linear model. \\ 
+
+\noindent
+Altogether, we can conclude that this model's impact serves best as a general guideline for understanding realistic public policy because it is solely based largely on aggregate, cyclical economic factors that can be reasonably relied upon to occur continuously.
 
 \newpage
 
