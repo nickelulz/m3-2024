@@ -129,7 +129,7 @@ underfitting of the data.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.9\textwidth]{chart1}
+  \includegraphics[width=0.9\textwidth]{vacancy}
   \caption{The number of vacancies in Albequerque and Seattle from 2010 to 2022 \cite{Census2010ACSDP1Y2010.DP04,Census2010ACSDP5Y2010.DP04}.}
 \end{figure}
 
@@ -155,13 +155,15 @@ With this model, we can predict the following housing statistics for 2034 (10 ye
 
 \begin{table}[H]
   \centering
-  \begin{tabular}{|c c|c c|}
+  \begin{tabular}{|c c|c c c|}
+    \hline 
+    &&&&\\
+    Year & \shortstack{Years from 2024} & \shortstack{Total Available \\ Homes} & \shortstack{Average Available \\ Homes in Each \\ City} & \shortstack{Change from 2024} \\
     \hline
-    Year & Years from 2024 & Total Available Homes & Average Available Homes in Each City \\
-    \hline
-    2034 & 10 & 47,726 & 22,846 \\
-    2044 & 20 & 51,576 & 24,766 \\
-    2074 & 50 & 63,126 & 30,526 \\
+    2024 & 0  & 43,876 & 20,926 & 0 \\
+    2034 & 10 & 47,726 & 22,846 & 1,920 \\
+    2044 & 20 & 51,576 & 24,766 & 1,920 \\
+    2074 & 50 & 63,126 & 30,526 & 1,920 \\
     \hline
   \end{tabular}
 \end{table}
@@ -178,10 +180,125 @@ Altogether, we can conclude that this model's impact serves best as a general gu
 \section{It was the Worst of Times}
 
 \subsection{Restatement of the Problem}
+The first problem asks us to develop a mathematical model to predict changes to the homeless population over the next 50
+years in two cities of our choosing: Seattle, Washington; and Albequerque, New Mexico.
+
 \subsection{Assumptions and Justifications}
+\textit{Public policy regarding homelessness will stay roughly the same throughout the next fifty years.} \\
+
+\noindent
+Justification: We assume that there will be no significant changes to government policy that would severely change the homeless population, as these immense changes to public policy require immense predictions of political trends beyond the scope of this study. \\
+
 \subsection{Model Development}
+For our model, we used yet another linear support vector machine for simple linear regression at $C=1.0$ as trained on the following data sets:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c c c c|} 
+    \hline 
+    Year & Total housing units & Occupied units & Vacant units \\ [0.5ex]
+    \hline
+    2010 & 234,891 & 217,256 & 17,635 \\
+    2011 & 237,735 & 220,060 & 17,675 \\
+    2012 & 239,718 & 222,584 & 17,134 \\
+    2013 & 240,277 & 222,491 & 17,786 \\
+    2014 & 240,961 & 222,868 & 18,093 \\
+    2015 & 241,326 & 222,098 & 19,228 \\
+    2016 & 242,070 & 221,320 & 20,750 \\
+    2017 & 243,402 & 221,119 & 22,283 \\
+    2018 & 244,382 & 222,748 & 21,634 \\
+    2019 & 245,476 & 224,166 & 21,310 \\
+    2020 & 247,926 & 229,701 & 18,225 \\
+    2021 & 252,924 & 236,191 & 16,733 \\
+    2022 & 255,178 & 239,800 & 15,378 \\ [1ex] 
+    \hline
+  \end{tabular}
+  \caption{Housing Statistics in Albequerque, New Mexico \cite{Census2010ACSDP1Y2010.DP04}.}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{homeless-vs-year-alb}
+  \caption{Total Homeless by Year in Albequerque, New Mexico}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{homeless-prop-vs-year-alb}
+  \caption{Percentage of the Population that is Homeless in Albequerque, New Mexico}
+\end{figure}
+
+\noindent
+Therefore, for Albequerque, let $A_{T}(x)$ be total number of homeless people in Albequerque, where $x$ is the current year (which is absolute from 0, such as 2024).
+
+$$A_{T}(x) = 32,757.7 - 15.54(x)$$
+
+\noindent
+Additionally, let $A_{\%}(x)$ be the percentage of Albequerque's population that is homeless, where $x$ is the current year (which is absolute from 0, such as 2024).
+
+$$A_{\%}(x) = .08124 - 3.9(x) \times 10^{-5}$$
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{homeless-vs-year-seattle}
+  \caption{Total Homeless by Year in Seattle, Washington}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{homeless-prop-vs-year-seattle}
+  \caption{Percentage of the Population that is Homeless in Seattle, Washington}
+\end{figure}
+
+\noindent
+Therefore, for Seattle, let $S_{T}(x)$ be total number of homeless people in Seattle, where $x$ is the current year (which is absolute from 0, such as 2024).
+
+$$S_{T}(x) = 341.625x + 7902$$
+
+\noindent
+Additionally, let $S_{\%}(x)$ be the percentage of Seattle's population that is homeless, where $x$ is the current year (which is absolute from 0, such as 2024).
+
+$$S_{\%}(x) = 0.65 - 2.473(x) \times 10^{-5}$$
+
 \subsection{Results}
+
+With this model, we can predict the following homelessness statistics for 2034 (10 years in the future), 2044 (20 years in the future), and 2074 (50 years in the future):
+
+\subsubsection{Albequerque, New Mexico}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c c|c c c|}
+    \hline 
+    Year & \shortstack{Years from 2024} & \shortstack{Homeless Percentage} & \shortstack{Total Homeless} & \shortstack{Change from 2024} \\
+    \hline
+    $2024$ & $0$  & $2.304 \times 10^{-3}$ & $1,304.74$ & $0$ \\
+    $2034$ & $10$ & $1.914 \times 10^{-3}$ & $1,149.34$ & $-155.4$ \\
+    $2044$ & $20$ & $1.524 \times 10^{-3}$ & $993.94$   & $-155.4$ \\
+    $2074$ & $50$ & $3.54  \times 10^{-3}$ & $527.74$   & $-155.4$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\subsubsection{Seattle, Washington}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c c|c c c|}
+    \hline 
+    Year & \shortstack{Years from 2024} & \shortstack{Homeless Percentage} & \shortstack{Total Homeless} & \shortstack{Change from 2024} \\
+    \hline
+    $2024$ & $0$  & $0.6$   & $699,351$    & $0$ \\
+    $2034$ & $10$ & $0.6$   & $702,767.25$ & $3,416.25$ \\
+    $2044$ & $20$ & $0.6$   & $706,183.5$  & $3,416.5$ \\
+    $2074$ & $50$ & $0.599$ & $716,432.25$ & $10,249$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
 \subsection{Reflecting on the Model}
+
+Reflecting on the Models: Our homeless models for both the city of Seattle and Albuquerque proves a little weak, as the homeless population rate won’t have a linear decrease or increase following the year 2023, but will have its ups and downs. Although our data for the graphs are not perfect, it offers a distinct trend between the two cities, since Seattle’s estimated homeless population rate is going up, while Albuquerque’s homeless population rate is going down. This gives insight on the effectiveness of Albuquerque’s methods in solving the homeless crisis, and should be explored furthermore.
 
 \newpage
 
