@@ -1,0 +1,380 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.8.30)  3 MAR 2024 23:46
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**paper.tex
+(./paper.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-01-16>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count193
+\c@Blindtext=\count194
+\c@blind@countparstart=\count195
+\blind@countxx=\count196
+\blindtext@numBlindtext=\count197
+\blind@countyy=\count198
+\c@blindlist=\count199
+\c@blindlistlevel=\count266
+\c@blindlist@level=\count267
+\blind@listitem=\count268
+\c@blind@listcount=\count269
+\c@blind@levelcount=\count270
+\blind@mathformula=\count271
+\blind@Mathformula=\count272
+\c@blind@randomcount=\count273
+\c@blind@randommax=\count274
+\c@blind@pangramcount=\count275
+\c@blind@pangrammax=\count276
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count277
+\float@exts=\toks16
+\float@box=\box51
+\@float@everytoks=\toks17
+\@floatcapt=\box52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count278
+\l__pdf_internal_box=\box53
+)
+(./paper.aux)
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count279
+\scratchdimen=\dimen143
+\scratchbox=\box54
+\nofMPsegments=\count280
+\nofMParguments=\count281
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count282
+\MPscratchDim=\dimen144
+\MPnumerator=\count283
+\makeMPintoPDFobject=\count284
+\everyMPtoPDFconversion=\toks20
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Underfull \hbox (badness 10000) in paragraph at lines 20--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--32
+
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 41.
+ [2] (./paper.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `paper.toc'.
+
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
+
+ []
+
+[5] [6]
+<./figures//vacancy.png, id=24, 602.25pt x 372.39125pt>
+File: ./figures//vacancy.png Graphic file (type png)
+<use ./figures//vacancy.png>
+Package pdftex.def Info: ./figures//vacancy.png  used on input line 151.
+(pdftex.def)             Requested size: 350.99762pt x 217.04396pt.
+ [7 <./figures//vacancy.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
+
+ []
+
+
+Overfull \hbox (24.98131pt too wide) in paragraph at lines 177--188
+ [][] 
+ []
+
+
+Overfull \hbox (9.11674pt too wide) in paragraph at lines 192--193
+\OT1/ptm/m/n/12 Overall, our model proves gen-er-ally weak at pre-dict-ing im-m
+ense, un-forseen changes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+Overfull \hbox (1.29176pt too wide) in paragraph at lines 194--196
+\OT1/ptm/m/n/12 guide-line for un-der-stand-ing re-al-is-tic pub-lic pol-icy be
+-cause it is solely based largely
+ []
+
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+
+ []
+
+[10]
+<./figures//homeless-vs-year-alb.png, id=44, 602.25pt x 372.39125pt>
+File: ./figures//homeless-vs-year-alb.png Graphic file (type png)
+<use ./figures//homeless-vs-year-alb.png>
+Package pdftex.def Info: ./figures//homeless-vs-year-alb.png  used on input lin
+e 255.
+(pdftex.def)             Requested size: 312.00119pt x 192.9286pt.
+ [11]
+<./figures//homeless-prop-vs-year-alb.png, id=48, 602.25pt x 372.39125pt>
+File: ./figures//homeless-prop-vs-year-alb.png Graphic file (type png)
+<use ./figures//homeless-prop-vs-year-alb.png>
+Package pdftex.def Info: ./figures//homeless-prop-vs-year-alb.png  used on inpu
+t line 261.
+(pdftex.def)             Requested size: 312.00119pt x 192.9286pt.
+ [12 <./figures//homeless-vs-year-alb.png> <./figures//homeless-prop-vs-year-al
+b.png>]
+<./figures//homeless-vs-year-seattle.png, id=55, 513.92pt x 302.12875pt>
+File: ./figures//homeless-vs-year-seattle.png Graphic file (type png)
+<use ./figures//homeless-vs-year-seattle.png>
+Package pdftex.def Info: ./figures//homeless-vs-year-seattle.png  used on input
+ line 304.
+(pdftex.def)             Requested size: 312.00119pt x 183.42696pt.
+ [13]
+<./figures//homeless-prop-vs-year-seattle.png, id=61, 513.92pt x 318.18875pt>
+File: ./figures//homeless-prop-vs-year-seattle.png Graphic file (type png)
+<use ./figures//homeless-prop-vs-year-seattle.png>
+Package pdftex.def Info: ./figures//homeless-prop-vs-year-seattle.png  used on 
+input line 310.
+(pdftex.def)             Requested size: 312.00119pt x 193.17722pt.
+ [14 <./figures//homeless-vs-year-seattle.png> <./figures//homeless-prop-vs-yea
+r-seattle.png>]
+Overfull \hbox (41.26855pt too wide) in paragraph at lines 332--342
+ [][] 
+ []
+
+
+Overfull \hbox (41.26855pt too wide) in paragraph at lines 348--358
+ [][] 
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--392
+
+ []
+
+[16] [17] (./paper.bbl
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 9
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 1142) in paragraph at lines 4--10
+[]\OT1/ptm/m/n/12 Chris Arnold, Robert Ben-in-casa, Jacque-line Ga-Nun, and Hai
+dee Chu.
+ []
+
+
+Underfull \hbox (badness 2980) in paragraph at lines 4--10
+\OT1/ptm/m/n/12 2024 $\OT1/pcr/m/n/12 https : / / www . npr . org / 2022 / 07 /
+ 14 / 1109345201 /
+ []
+
+
+Overfull \hbox (216.86661pt too wide) in paragraph at lines 4--10
+\OT1/pcr/m/n/12 theres-[]a-[]massive-[]housing-[]shortage-[]across-[]the-[]u-[]
+s-[]heres-[]how-[]bad-[]it-[]is-[]where-[]you-[]l$\OT1/ptm/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 26--32
+[]\OT1/ptm/m/n/12 U.S. Cen-sus Bu-reau.  Se-lected hous-ing char-ac-ter-is-tics
+.  U.S. Cen-sus
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 26--32
+\OT1/ptm/m/n/12 Bu-reau.  Ac-cessed on 3 March 2024. $\OT1/pcr/m/n/12 https : /
+ / data . census .
+ []
+
+
+Underfull \hbox (badness 4899) in paragraph at lines 26--32
+\OT1/pcr/m/n/12 gov / table / ACSDP5Y2018 . DP04 ? q = seattlecityDP04 & g =
+ []
+
+
+Underfull \hbox (badness 7133) in paragraph at lines 34--39
+[]\OT1/ptm/m/n/12 U.S. Dept. of Hous-ing and Ur-ban De-vel-op-ment.  Pit and hi
+c
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 34--39
+\OT1/ptm/m/n/12 data since 2007.  HUD Ex-change.  Ac-cessed on 3 March 2024.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
+\OT1/pcr/m/n/12 https : / / www . hudexchange . info / resource / 3031 /
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 48--54
+\OT1/ptm/m/n/12 man-age-ment, job place-ment ser-vices at west-side shel-ter fo
+r first time.
+ []
+
+) [18] (./paper.aux) ) 
+Here is how much of TeX's memory you used:
+ 1858 strings out of 476091
+ 31885 string characters out of 5794081
+ 1861330 words of memory out of 5000000
+ 22234 multiletter control sequences out of 15000+600000
+ 529860 words of font info for 63 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,12n,62p,640b,304s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
+c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
+/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (18 pages, 321759 bytes).
+PDF statistics:
+ 123 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+

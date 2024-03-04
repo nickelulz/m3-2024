@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{}%
+\contentsline {section}{\numberline {2}It was the Best of Times}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Restatement of the Problem}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Assumptions and Justifications}{5}{}%
+\contentsline {subsection}{\numberline {2.3}Model Development}{5}{}%
+\contentsline {subsection}{\numberline {2.4}Results}{8}{}%
+\contentsline {subsection}{\numberline {2.5}Reflecting on the Model}{8}{}%
+\contentsline {section}{\numberline {3}It was the Worst of Times}{10}{}%
+\contentsline {subsection}{\numberline {3.1}Restatement of the Problem}{10}{}%
+\contentsline {subsection}{\numberline {3.2}Assumptions and Justifications}{10}{}%
+\contentsline {subsection}{\numberline {3.3}Model Development}{10}{}%
+\contentsline {subsection}{\numberline {3.4}Results}{15}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Albuquerque, New Mexico}{15}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Seattle, Washington}{15}{}%
+\contentsline {subsection}{\numberline {3.5}Reflecting on the Model}{15}{}%
+\contentsline {section}{\numberline {4}Rising from this Abyss}{16}{}%
+\contentsline {subsection}{\numberline {4.1}Restatement of the Problem}{16}{}%
+\contentsline {subsection}{\numberline {4.2}Assumptions and Justifications}{16}{}%
+\contentsline {subsection}{\numberline {4.3}Model Development}{16}{}%
+\contentsline {subsection}{\numberline {4.4}Reflecting on the Model}{17}{}%

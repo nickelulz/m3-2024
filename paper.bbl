@@ -8,6 +8,13 @@ Chris Arnold, Robert Benincasa, Jacqueline GaNun, and Haidee Chu.
 \newblock Accessed on 3 March 2024
   \url{https://www.npr.org/2022/07/14/1109345201/theres-a-massive-housing-shortage-across-the-u-s-heres-how-bad-it-is-where-you-l}.
 
+\bibitem{Census2022ACSST1Y2022.S0101}
+U.S.~Census Bureau.
+\newblock Age and sex.
+\newblock U.S. Census Bureau.
+\newblock Accessed on 3 March 2024.
+  \url{https://data.census.gov/table/ACSST1Y2022.S0101?q=seattle age}.
+
 \bibitem{Census2010ACSDP1Y2010.DP04}
 U.S.~Census Bureau.
 \newblock Selected housing characteristics.
@@ -20,6 +27,29 @@ U.S.~Census Bureau.
 \newblock Selected housing characteristics.
 \newblock U.S. Census Bureau.
 \newblock Accessed on 3 March 2024.
-  \url{https://data.census.gov/table/ACSDP5Y2010.DP04?q=seattle%20city%20DP04&g=160XX00US5363000&hidePreview=false&vintage=2018&layer=VT_2018_160_00_PY_D1&cid=DP04_0001E&tid=ACSDP5Y2018.DP04}.
+  \url{https://data.census.gov/table/ACSDP5Y2018.DP04?q=seattle city
+  DP04&g=160XX00US5363000}.
+
+\bibitem{HOMELESS-STATS}
+U.S.~Dept. of~Housing and Urban Development.
+\newblock Pit and hic data since 2007.
+\newblock HUD Exchange.
+\newblock Accessed on 3 March 2024.
+  \url{https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/}.
+
+\bibitem{ALB-LABOR}
+U.S.~Bureau of~Labor~Statistics.
+\newblock Economy at a glance: Albuquerque, nm.
+\newblock U.S. Bureau of Labor Statistics.
+\newblock Accessed on 3 March 2024.
+  \url{https://www.bls.gov/eag/eag.nm_albuquerque_msa.htm}.
+
+\bibitem{ALB-JOBS}
+Targeted~News Service.
+\newblock Albuquerque city adds medical services, case management, job
+  placement services at westside shelter for first time.
+\newblock {\em Gale OneFile: News}.
+\newblock Accessed on 3 March 2024.
+  \url{https://link.gale.com/apps/doc/A603516840/STND?u=j101907002&sid=bookmark-STND&xid=bbb71a03}.
 
 \end{thebibliography}

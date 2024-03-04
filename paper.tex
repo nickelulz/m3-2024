@@ -17,7 +17,26 @@
 \newpage
 
 \section*{Executive Summary}
-\blindtext
+For the first part of our paper, we were asked to develop a mathematical model to predict changes to the housing
+supply over the next 50 years in two cities of our choosing, of which we chose Seattle, Washington and Albuquerque,
+New Mexico. To solve this, we developed a linear model through regressing historical housing supply data across both
+cities, and determined that it proves weak at accounting for large unforseen events like war, epidemics, or natural
+disasters while still successfully guiding public policy decisions under the assumption that such instances rarely, if
+ever, occur. \\
+
+\noindent
+For the second part of our paper, we are asked to develop a similar model to track the rate of homelessness across
+both cities. Again, we regressed historical homelessness data to develop a linear model, except in these models, we
+chose to develop models designed for each city rather than one aggregate model due to the completely different
+homelessness situations across each city. \\
+
+\noindent
+Lastly, for the third and final part of our paper, we are asked to develop a model to best aid local governments in
+developing public policy to combat homelessness. We conclude that, based on our results from part 2, public policy
+decisions made by Albuquerque will be the most successful, and as such, we chose to mathematically model the effects
+of their public policy on homelessness populations. From there, we reflected on our model and determined that it, yet
+again, fails to account for difficult-to-foresee situations but serves well as a general guideline for local
+governments when developing public policy decisions.
 
 \maketitle
 \newpage
@@ -38,7 +57,7 @@ models to best understand such a trend.
 
 \subsection{Restatement of the Problem}
 The first problem asks us to develop a mathematical model to predict changes to the housing supply over the next 50
-years in two cities of our choosing: Seattle, Washington; and Albequerque, New Mexico.
+years in two cities of our choosing: Seattle, Washington; and Albuquerque, New Mexico.
 
 \subsection{Assumptions and Justifications}
 
@@ -59,7 +78,7 @@ Justification: In regards to fixing the homelessness crisis, housing that can be
 unhoused people inherently must be unoccupied by others. \\
 
 \noindent
-\textit{Differences in median housing costs and median income per capita across regions in both Albequerque and Seattle
+\textit{Differences in median housing costs and median income per capita across regions in both Albuquerque and Seattle
 will not be considered in determining housing availability.} \\
 
 \noindent
@@ -68,11 +87,11 @@ causal relationship. \\
 
 \subsection{Model Development}
 For our housing availability model, we choose to use a simple vector machine that regresses historical housing availiability
-data for both Albequerque and Seattle, and from there, we cross-reference this data with historical economic trends
+data for both Albuquerque and Seattle, and from there, we cross-reference this data with historical economic trends
 across the United States to best model housing availability over time given cyclical economic trends.
 
 \noindent
-To begin, we trained the model on the following datasets for housing availability in Albequerque and Seattle and the
+To begin, we trained the model on the following datasets for housing availability in Albuquerque and Seattle and the
 national GDP of the United States.
 
 \begin{table}[H]
@@ -96,7 +115,7 @@ national GDP of the United States.
     2022  &  255,178 & 239,800 & 15,378 \\ [1ex] 
     \hline
   \end{tabular}
-  \caption{Housing Statistics in Albequerque, New Mexico \cite{Census2010ACSDP1Y2010.DP04}.}
+  \caption{Housing Statistics in Albuquerque, New Mexico \cite{Census2010ACSDP1Y2010.DP04}.}
 \end{table}
 
 \begin{table}[H]
@@ -130,7 +149,7 @@ underfitting of the data.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.9\textwidth]{vacancy}
-  \caption{The number of vacancies in Albequerque and Seattle from 2010 to 2022 \cite{Census2010ACSDP1Y2010.DP04,Census2010ACSDP5Y2010.DP04}.}
+  \caption{The number of vacancies in Albuquerque and Seattle from 2010 to 2022 \cite{Census2010ACSDP1Y2010.DP04,Census2010ACSDP5Y2010.DP04}.}
 \end{figure}
 
 \noindent
@@ -181,7 +200,7 @@ Altogether, we can conclude that this model's impact serves best as a general gu
 
 \subsection{Restatement of the Problem}
 The first problem asks us to develop a mathematical model to predict changes to the homeless population over the next 50
-years in two cities of our choosing: Seattle, Washington; and Albequerque, New Mexico.
+years in two cities of our choosing: Seattle, Washington; and Albuquerque, New Mexico.
 
 \subsection{Assumptions and Justifications}
 \textit{Public policy regarding homelessness will stay roughly the same throughout the next fifty years.} \\
@@ -194,49 +213,91 @@ For our model, we used yet another linear support vector machine for simple line
 
 \begin{table}[H]
   \centering
-  \begin{tabular}{|c c c c|} 
+  \begin{tabular}{|c c c|} 
     \hline 
-    Year & Total housing units & Occupied units & Vacant units \\ [0.5ex]
+    Year & Total Population & Total Homeless \\ [0.5ex]
     \hline
-    2010 & 234,891 & 217,256 & 17,635 \\
-    2011 & 237,735 & 220,060 & 17,675 \\
-    2012 & 239,718 & 222,584 & 17,134 \\
-    2013 & 240,277 & 222,491 & 17,786 \\
-    2014 & 240,961 & 222,868 & 18,093 \\
-    2015 & 241,326 & 222,098 & 19,228 \\
-    2016 & 242,070 & 221,320 & 20,750 \\
-    2017 & 243,402 & 221,119 & 22,283 \\
-    2018 & 244,382 & 222,748 & 21,634 \\
-    2019 & 245,476 & 224,166 & 21,310 \\
-    2020 & 247,926 & 229,701 & 18,225 \\
-    2021 & 252,924 & 236,191 & 16,733 \\
-    2022 & 255,178 & 239,800 & 15,378 \\ [1ex] 
+    2007 & -       & 1,276 \\
+    2008 & -       & 1,276 \\
+    2009 & -       & 2,002 \\
+    2010 & 531,403 & 2,002 \\
+    2011 & 539,000 & 1,639 \\
+    2012 & 545,083 & 1,431 \\
+    2013 & 549,812 & 1,171 \\
+    2014 & 553,576 & 1,254 \\
+    2015 & 556,092 & 1,287 \\
+    2016 & 556,859 & 1,222 \\
+    2017 & 556,718 & 1,318 \\
+    2018 & 559,202 & 1,340 \\
+    2019 & 559,374 & 1,524 \\
+    2020 & 560,447 & 1,586 \\
+    2021 & 562,336 & 1,567 \\
+    2022 & 562,551 & 1,277 \\
     \hline
   \end{tabular}
-  \caption{Housing Statistics in Albequerque, New Mexico \cite{Census2010ACSDP1Y2010.DP04}.}
+  \caption{Total Population by Year in Albuquerque \cite{Census2022ACSST1Y2022.S0101,HOMELESS-STATS}.}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c c|} 
+    \hline 
+    Year & Total Homeless \\ [0.5ex]
+    \hline
+    
+    \hline
+  \end{tabular}
+  \caption{}
 \end{table}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{homeless-vs-year-alb}
-  \caption{Total Homeless by Year in Albequerque, New Mexico}
+  \caption{Total Homeless by Year in Albuquerque, New Mexico}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{homeless-prop-vs-year-alb}
-  \caption{Percentage of the Population that is Homeless in Albequerque, New Mexico}
+  \caption{Percentage of the Population that is Homeless in Albuquerque, New Mexico}
 \end{figure}
 
 \noindent
-Therefore, for Albequerque, let $A_{T}(x)$ be total number of homeless people in Albequerque, where $x$ is the current year (which is absolute from 0, such as 2024).
+Therefore, for Albuquerque, let $A_{T}(x)$ be total number of homeless people in Albequerque, where $x$ is the current year (which is absolute from 0, such as 2024).
 
 $$A_{T}(x) = 32,757.7 - 15.54(x)$$
 
 \noindent
-Additionally, let $A_{\%}(x)$ be the percentage of Albequerque's population that is homeless, where $x$ is the current year (which is absolute from 0, such as 2024).
+Additionally, let $A_{\%}(x)$ be the percentage of Albuquerque's population that is homeless, where $x$ is the current year (which is absolute from 0, such as 2024).
 
 $$A_{\%}(x) = .08124 - 3.9(x) \times 10^{-5}$$
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c c c|} 
+    \hline 
+    Year & Total Population & Total Homeless \\ [0.5ex]
+    \hline
+    2007 & -       & 7,902 \\
+    2008 & -       & 8,501 \\
+    2009 & -       & 8,952 \\
+    2010 & 595,240 & 9,022 \\
+    2011 & 603,174 & 8,972 \\
+    2012 & 612,916 & 8,899 \\
+    2013 & 624,681 & 9,106 \\
+    2014 & 637,850 & 8,949 \\
+    2015 & 653,017 & 10,122 \\
+    2016 & 668,849 & 10,730 \\
+    2017 & 688,245 & 11,643 \\
+    2018 & 708,823 & 12,112 \\
+    2019 & 724,305 & 11,199 \\
+    2020 & 741,251 & 11,751 \\
+    2021 & 726,054 & 5,183 \\
+    2022 & 734,603 & 13,368 \\
+    \hline
+  \end{tabular}
+  \caption{Total Population by Year in Seattle \cite{Census2022ACSST1Y2022.S0101,HOMELESS-STATS}.}
+\end{table}
 
 \begin{figure}[H]
   \centering
@@ -264,7 +325,7 @@ $$S_{\%}(x) = 0.65 - 2.473(x) \times 10^{-5}$$
 
 With this model, we can predict the following homelessness statistics for 2034 (10 years in the future), 2044 (20 years in the future), and 2074 (50 years in the future):
 
-\subsubsection{Albequerque, New Mexico}
+\subsubsection{Albuquerque, New Mexico}
 
 \begin{table}[H]
   \centering
@@ -305,10 +366,46 @@ Reflecting on the Models: Our homeless models for both the city of Seattle and A
 \section{Rising from this Abyss}
 
 \subsection{Restatement of the Problem}
+The third and final question asks us to utilize the results from at least one of our previous models to first develop a final
+model that can be used to best aid a city in combatting the homelessness crisis then analyze the model for its
+strengths and weaknesses given situations like natural disasters, economic recessions, or migrant populations.
+
 \subsection{Assumptions and Justifications}
+\textit{Job availability will be stimulated primarily through public policy from the government.} \\
+
+\noindent
+The intent of this model is to understand how public policy ought to reflect into homelessness statistics without
+heavy consideration to external factors, such as the growth or shrinking of privately funded opportunities
+supplied for homeless people (such as charity or jobs). Such consideration would require more narrow focus on cyclical
+economic trends, when in reference to the success of implementing simple public policy, such methods would be rendered
+unnecessary. For the sake of brevity, lawmakers merely need to understand the general impacts of their legislation rather than their impact in
+context of the entire economic situation of their region.
+
 \subsection{Model Development}
-\subsection{Results}
+
+We developed our model based on the predictions outlined in recent public policy decisions made by Albuquerque city
+officials of combatting homelessness through policy-funded stimulation of job opportunities directly for homeless
+shelter residents\cite{ALB-JOBS}. Given the immense success Albuquerque has had thus far in reducing homelessness year
+after year (as shown in our previous results), we can conclude that their success in providing conncting opportunities
+to the homeless ought to serve as the benchmark for determining public policy for addressing homeless populations
+throughout the nation. \\
+
+\noindent
+Thus, we developed the following model through our previous linear regression processes with data from Albuquerque's
+labor statistics \cite{ALB-LABOR}. Let $N(x)$ equal our homelessness population in Albuquerque for a given year, where $x$ is the
+number of available jobs for the given market.
+
+$$N(x) = 1,368-0.037(x)$$
+
 \subsection{Reflecting on the Model}
+
+This model provides a strong general basis for understanding how the availability of jobs for homeless populations
+within Albequerque serves as an inverse relationship, directly combatting the homelessness crisis in an incredibly
+effective manner. However, we must acknowledge that it is unreliable in consideration to unforseen events that could
+divert resources from providing economic opportunities like jobs for the homeless, such as war or natural disasters,
+due to lacking nuance for accounting for such occurances. Additionally, as a linear model, it will be far less
+accurate for accounting for cyclical movements in the economy, acting as more of an aggregate measure for combatting
+homelessness through job opportunities than a guaranteed predictor of homelessness statistics.
 
 \newpage
 
